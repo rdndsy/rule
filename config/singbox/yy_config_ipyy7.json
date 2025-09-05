@@ -90,8 +90,7 @@
       { "tag": "OutChina", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🐸 手动切换", "🎯 全球直连", "{all}"]},
       { "tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🎯 全球直连", "🚀 节点选择"]},
       { "tag": "🐸 手动切换", "type": "selector", "outbounds": ["{all}"]},
-      {
-		  "tag": "♻️ 自动选择",
+      { "tag": "♻️ 自动选择",
 		  "type": "urltest",
 		  "outbounds": ["{all}"],
 		  "use_all_providers": true,
