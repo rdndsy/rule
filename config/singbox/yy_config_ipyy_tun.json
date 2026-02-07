@@ -19,7 +19,7 @@
         {"tag": "block", "address": "rcode://success"}
       ],
       "rules": [
-            { "rule_set": "geosite-ads", "server": "block"},		
+            { "rule_set": ["geosite-ads", "geosite-ads2"], "server": "block"},		
             { "outbound": "any", "server": "localDns", "disable_cache": true },
             { "rule_set": "geosite-cn", "server": "localDns" },		  
             { "clash_mode": "direct", "server": "localDns" },
@@ -91,7 +91,7 @@
           "final": "🐠 漏网之鱼",
       "rules": [
         { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
-        { "rule_set": ["geosite-ads"], "outbound": "AdBlock" },
+        { "rule_set": ["geosite-ads", "geosite-ads2"], "outbound": "AdBlock" },
         { "port_range": "21115:21119", "outbound": "🎯 全球直连"},
         { "clash_mode": "direct", "outbound": "🎯 全球直连" },
         { "clash_mode": "global", "outbound": "GLOBAL" },
@@ -129,6 +129,7 @@
         { "tag": "geosite-private", "type": "remote", "format": "binary", "url": "https://git.rdn.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs", "download_detour": "🎯 全球直连" },
         { "tag": "geosite-gfw", "type": "remote", "format": "binary", "url": "https://git.rdn.us.kg/https://github.com/Toperlock/sing-box-geosite/raw/refs/heads/main/rule/gfw.srs", "download_detour": "🎯 全球直连" },
         { "tag": "geosite-ads", "type": "remote", "format": "binary", "url": "https://git.rdn.us.kg/https://github.com/Toperlock/sing-box-geosite/raw/refs/heads/main/rule/adrules_domainset.srs", "download_detour": "🎯 全球直连" },
+        { "tag": "geosite-ads2", "type": "remote", "format": "binary", "url": "https://git.rdn.us.kg/https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Sing-box/main/adblock_reject.srs", "download_detour": "🎯 全球直连" },
         { "tag": "geoip-google", "type": "remote", "format": "binary", "url": "https://git.rdn.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs", "download_detour": "🎯 全球直连" },
         { "tag": "geoip-telegram", "type": "remote", "format": "binary", "url": "https://git.rdn.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs", "download_detour": "🎯 全球直连" },     
         { "tag": "geoip-netflix", "type": "remote", "format": "binary", "url": "https://git.rdn.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs", "download_detour": "🎯 全球直连" },     
