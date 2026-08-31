@@ -82,8 +82,7 @@
   },
   "http_clients": [
     {
-      "tag": "direct-http",
-      "detour": "🎯 全球直连"
+      "tag": "direct-http"
     }
   ],
   "inbounds": [
