@@ -94,7 +94,6 @@
       "address": "172.19.0.1/30",
       "mtu": 9000,
       "auto_route": true,
-      "sniff": true,
       "stack": "system",
       "strict_route": true,
       "platform": {
@@ -109,7 +108,6 @@
       "type": "mixed",
       "listen": "127.0.0.1",
       "listen_port": 2080,
-      "sniff": true,
       "users": []
     }
   ],
@@ -302,6 +300,9 @@
     "final": "🐠 漏网之鱼",
     "default_http_client": "direct-http",
     "rules": [
+      {
+        "action": "sniff"
+      },
       {
         "type": "logical",
         "mode": "or",
