@@ -19,7 +19,6 @@
         "path": "/dns-query",
         "domain_resolver": "defaultDns",
         "domain_strategy": "ipv4_only",
-        "client_subnet": "1.0.1.0",
         "detour": "🚀 节点选择"
       },
       {
