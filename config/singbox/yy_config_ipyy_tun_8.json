@@ -278,9 +278,9 @@
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
+        "🚀 节点选择",
         "♻️ 自动选择",
         "🐸 手动切换",
-        "🚀 节点选择",
         "{all}"
       ]
     },
