@@ -82,7 +82,8 @@
   },
   "http_clients": [
     {
-      "tag": "direct-http"
+      "tag": "direct-http",
+      "domain_resolver": "defaultDns"
     }
   ],
   "inbounds": [
@@ -294,6 +295,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
+    "default_domain_resolver": "defaultDns",
     "final": "🐠 漏网之鱼",
     "default_http_client": "direct-http",
     "rules": [
