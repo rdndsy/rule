@@ -36,11 +36,6 @@
         "server": "119.29.29.29",
         "server_port": 53,
         "detour": "🎯 全球直连"
-      },
-      {
-        "tag": "block",
-        "type": "predefined",
-        "rcode": "NOERROR"
       }
     ],
     "rules": [
@@ -49,8 +44,8 @@
           "geosite-ads",
           "geosite-ads2"
         ],
-        "action": "route",
-        "server": "block"
+        "action": "predefined",
+        "rcode": "NOERROR"
       },
       {
         "rule_set": "geosite-cn",
