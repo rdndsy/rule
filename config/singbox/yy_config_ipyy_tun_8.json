@@ -27,15 +27,13 @@
         "server": "dns.alidns.com",
         "path": "/dns-query",
         "domain_resolver": "defaultDns",
-        "domain_strategy": "ipv4_only",
-        "detour": "🎯 全球直连"
+        "domain_strategy": "ipv4_only"
       },
       {
         "tag": "defaultDns",
         "type": "udp",
         "server": "119.29.29.29",
-        "server_port": 53,
-        "detour": "🎯 全球直连"
+        "server_port": 53
       }
     ],
     "rules": [
